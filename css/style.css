@@ -12,7 +12,27 @@ body{
     background-color: aliceblue;
 }
 
-/* GAMEPAGE */
+/* GAMEPAGE/TITLE */
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 16px 16px 5vh 16px;
+}
+
+.title img:first-child {
+    height: 140px;
+    width: auto;
+}
+
+.title img:last-child {
+    height: 170px;
+    width: auto;
+}
+
+/* GAMEPAGE/WORDLE */
 
 .Game {
     display: flex;
