@@ -8,6 +8,13 @@
     --backgroundsquaresize: 80px;
 }
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
 body{
     background-color: aliceblue;
 }
@@ -65,18 +72,33 @@ body{
 
 .Game > .Element > .Square {
     background-color: var(--color-white);
+    transition: all .1s ease-in-out .1s;
 }
 .Keyboard > .Element > .Square {
     background-color: aquamarine;
+    transition: all .1s ease-in-out .1s;
 }
-.Letter {
-    background-color: aquamarine;
-}
+
 .mobile-keyboard {
     display: none;
 }
 .desktop-keyboard {
     display:flex;
+}
+
+.Game > .Element > .Square:hover {
+    background-color: var(--color-green);
+    
+}
+
+.Game > .Element > .YellowSQ:hover {
+    background-color: var(--color-yellow);
+    transform:scale(1.1);
+}
+
+.Keyboard > .Element > .Square:hover {
+    background-color: rgb(8, 206, 206);
+    transform:scale(1.1);
 }
 
 /* BACKGROUND */
@@ -129,7 +151,7 @@ body{
 }
 
 @media (max-width: 720px) {
-    html {
+    * {
         font-size: 12px;
     }
     .title img:first-child {
@@ -141,7 +163,7 @@ body{
 }
 
 @media (max-width: 480px) {
-    html {
+    * {
         font-size: 10px;
     }
     .title {
