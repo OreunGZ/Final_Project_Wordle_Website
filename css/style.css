@@ -199,6 +199,7 @@ body{
 }
 
 /* BACKGROUND */
+
 .bg-square-group {
     position: fixed;
     width: 3rem;
@@ -245,6 +246,58 @@ body{
         3rem   3rem   0 0 var(--color-green),
         6rem   3rem   0 0 var(--color-yellow),
         6rem   6rem   0 0 var(--color-green);
+}
+
+/* CONTACT */
+
+.title h1 {
+    font-size: var(--subtitlesize);
+    font-weight: 400;
+    color: var(--color-black);
+    letter-spacing: 2px;
+}
+ 
+.Conocenos,
+.Mapa {
+    margin: 2.5rem 0;
+    padding: 0 10vw;
+}
+ 
+.Conocenos h1,
+.Mapa h1 {
+    font-size: var(--subsubtitlesize);
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 0.75rem;
+}
+ 
+.Conocenos p {
+    font-size: var(--paragraphsize);
+    color: var(--color-gray);
+}
+ 
+.Mapa .mapa-contenido {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+ 
+.Mapa .mapa-texto {
+    flex: 1;
+    font-size: var(--paragraphsize);
+    color: var(--color-gray);
+}
+ 
+.Mapa .mapa-imagen {
+    width: 50%;
+}
+ 
+.Mapa .mapa-imagen iframe {
+    width: 100%;
+    height: 220px;
+    border: none;
+    border-radius: 8px;
+    display: block;
 }
 
 @media (max-width: 720px) {
