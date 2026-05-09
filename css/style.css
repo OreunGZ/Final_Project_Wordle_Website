@@ -6,6 +6,10 @@
     --color-white: #ffffff;
 
     --backgroundsquaresize: 80px;
+    --titlesize: 4rem;
+    --subtitlesize: 2rem;
+    --subsubtitlesize: 1.5rem;
+    --paragraphsize: 1rem;
 }
 
 *{
