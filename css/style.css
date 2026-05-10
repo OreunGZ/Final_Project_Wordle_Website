@@ -405,6 +405,87 @@ img {
     }
 }
 
+/* FORMULARIO */
+
+.Formulario {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+ 
+.Formulario h1 {
+    font-size: var(--subsubtitlesize);
+    font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+}
+ 
+.Formulario form {
+    width: 100%;
+    max-width: 620px;
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 3px solid var(--color-black);
+    box-shadow: 8px 8px var(--color-green);
+}
+ 
+.form-item {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+ 
+.form-item p {
+    font-size: var(--paragraphsize);
+    font-weight: bold;
+}
+ 
+.form-item label {
+    font-size: var(--paragraphsize);
+    color: var(--color-gray);
+}
+ 
+.form-item input[type="text"] {
+    padding: 0.5rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 6px;
+    width: 100%;
+}
+ 
+.form-item input[type="email"] {
+    padding: 0.5rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 6px;
+    width: 100%;
+}
+ 
+.form-item input[type="number"] {
+    padding: 0.5rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 6px;
+    width: 100%;
+}
+ 
+.form-item input[type="submit"] {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 2rem;
+    font-size: var(--paragraphsize);
+    cursor: pointer;
+}
+ 
+.form-item input[type="submit"]:hover {
+    background-color: var(--color-yellow);
+}
+ 
+
+
+
 @media (max-width: 720px) {
     * {
         font-size: 12px;

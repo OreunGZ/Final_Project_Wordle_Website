@@ -97,6 +97,30 @@
 
     <section class="Formulario">
         <h1>Rellena este formulario para contactarnos</h1>
+        <form id="menu">
+            <div class="form-item">
+                <label for="uname">Nombre:</label>
+                <input type="text" id="uname" name="user_name" required maxlength="32">
+            </div>
+            <div class="form-item">
+                <label for="uemail">Correo electrónico:</label>
+                <input type="email" name="user_email" id="uemail" required >
+            </div>
+            <div class="form-item">
+                <p>¿Qué quieres notificar?</p>
+                <label for="local">Un error</label>
+                <input type="radio" name="opt" id="local">
+                <label for="delivery">Una sugerencia</label>
+                <input type="radio" name="opt" id="delivery">
+            </div>
+            <div class="form-item">
+                <p>Quiero recibir notificaciones sobre futuras actualziaciones del proyecto</p>
+                <label for="subscribe">Aceptar</label>
+                <input type="checkbox" name="accept_subscription" id="subscribe">
+            </div>
+            <div class="form-item">
+                <input type="submit" value="¡Enviar!">
+            </div>
     </section>
 
     <div>
