@@ -6,10 +6,10 @@
     --color-white: #ffffff;
 
     --backgroundsquaresize: 80px;
-    --titlesize: 4rem;
-    --subtitlesize: 2rem;
-    --subsubtitlesize: 1.5rem;
-    --paragraphsize: 1rem;
+    --titlesize: 6rem;
+    --subtitlesize: 3rem;
+    --subsubtitlesize: 2rem;
+    --paragraphsize: 1.25rem;
 }
 
 *{
@@ -423,7 +423,7 @@ img {
  
 .Formulario form {
     width: 100%;
-    max-width: 620px;
+    max-width: 100%; 
     background-color: var(--color-white);
     padding: 2rem;
     border-radius: 12px;
