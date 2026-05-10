@@ -106,6 +106,26 @@ body{
     text-transform: uppercase;
     border-radius: 20%;
 }
+.yellow_color {
+    width: 3.8rem;
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-yellow);
+    text-transform: uppercase;
+    border-radius: 20%;
+}
+.gray_color {
+    width: 3.8rem;
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray);
+    text-transform: uppercase;
+    border-radius: 20%;
+}
 
 /* BACKGROUND */
 .bg-square-group {
