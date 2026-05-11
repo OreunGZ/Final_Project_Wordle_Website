@@ -3,69 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/instructions_style.css">
+    <title>Otros Juegos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Wordle_Logo_ICONO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <i></i>
-        <i></i>
-    </nav>
-    <header class="title">
-        <img src="img/Wordle_Logo_ICONO.png" alt="">
-        <img src="img/Wordle_Logo_TEXTO.png" alt="">
-    </header>
-    <section class="theme">
-        <h1>Otros Juegos</h1>
-    </section>
-    <section class="gallery_monitor">
-        <p>
-            Si te gustan los minijuegos, ¡Aquí podrás disfrutar de una alta gama de minijuegos creados por el propio equipo de desarrollo de Wordle!
-        </p>
-        <div class="gallery_group">
-            <div>
-                <img src="img/wordle_game_1.png" alt="" class="other_game">
-                <img src="img/wordle_game_2.png" alt="" class="other_game">
-                <img src="img/wordle_game_3.png" alt="" class="other_game">
-            </div>
-            <div>
-                <img src="img/wordle_game_4.png" alt="" class="other_game">
-                <img src="img/wordle_game_5.png" alt="" class="other_game">
-                <img src="img/wordle_game_6.png" alt="" class="other_game">
-            </div>
-            <div>
-                <img src="img/wordle_game_7.png" alt="" class="other_game">
-                <img src="img/wordle_game_8.png" alt="" class="other_game">
-                <img src="img/wordle_game_9.png" alt="" class="other_game">
-            </div>
+    <div class="wrapper">
+        <input type="checkbox" id="sideMenu" class="side-menu">
+
+        <nav class="header">
+            <label for="sideMenu" class="icons-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="contact.html">
+                <i class="fa-regular fa-address-book"></i>
+            </a>
+        </nav>
+        <div class="nav-mobile">
+            <label for="sideMenu" class="close-menu">
+                <i class="fa-solid fa-times"></i>
+            </label>
+            <ul class="menu-mobile">
+                <li><a href="gamepage.html">Wordle</a></li>
+                <li><a href="other_games.html">Otros Juegos</a></li>
+                <li><a href="instructions.html">Instrucciones</a></li>
+                <li id="ContactMobile"><a href="contact.html">Contactos</a></li>
+            </ul>
         </div>
-    </section>
-    <section class="gallery_phone">
-        <p>
-            Si te gustan los minijuegos, ¡Aquí podrás disfrutar de una alta gama de minijuegos creados por el propio equipo de desarrollo de Wordle!
-        </p>
-        <div class="gallery_group">
-            <div>
-                <img src="img/wordle_game_1.png" alt="" class="other_game">
-                <img src="img/wordle_game_2.png" alt="" class="other_game">
+        <header class="title">
+            <img src="img/Wordle_Logo_ICONO.png" alt="">
+            <img src="img/Wordle_Logo_TEXTO.png" alt="">
+        </header>
+        <section class="theme">
+            <h1>Otros Juegos</h1>
+        </section>
+        <section class="gallery_monitor">
+            <p>
+                Si te gustan los minijuegos, ¡Aquí podrás disfrutar de una alta gama de minijuegos creados por el propio equipo de desarrollo de Wordle!
+            </p>
+            <div class="gallery_group">
+                <div>
+                    <img src="img/wordle_game_1.png" alt="" class="other_game">
+                    <img src="img/wordle_game_2.png" alt="" class="other_game">
+                    <img src="img/wordle_game_3.png" alt="" class="other_game">
+                </div>
+                <div>
+                    <img src="img/wordle_game_4.png" alt="" class="other_game">
+                    <img src="img/wordle_game_5.png" alt="" class="other_game">
+                    <img src="img/wordle_game_6.png" alt="" class="other_game">
+                </div>
+                <div>
+                    <img src="img/wordle_game_7.png" alt="" class="other_game">
+                    <img src="img/wordle_game_8.png" alt="" class="other_game">
+                    <img src="img/wordle_game_9.png" alt="" class="other_game">
+                </div>
             </div>
-            <div>
-                <img src="img/wordle_game_3.png" alt="" class="other_game">
-                <img src="img/wordle_game_4.png" alt="" class="other_game">
+        </section>
+        <section class="gallery_phone">
+            <p>
+                Si te gustan los minijuegos, ¡Aquí podrás disfrutar de una alta gama de minijuegos creados por el propio equipo de desarrollo de Wordle!
+            </p>
+            <div class="gallery_group">
+                <div>
+                    <img src="img/wordle_game_1.png" alt="" class="other_game">
+                    <img src="img/wordle_game_2.png" alt="" class="other_game">
+                </div>
+                <div>
+                    <img src="img/wordle_game_3.png" alt="" class="other_game">
+                    <img src="img/wordle_game_4.png" alt="" class="other_game">
+                </div>
+                <div>
+                    <img src="img/wordle_game_5.png" alt="" class="other_game">
+                    <img src="img/wordle_game_6.png" alt="" class="other_game">
+                </div>
+                <div>
+                    <img src="img/wordle_game_7.png" alt="" class="other_game">
+                    <img src="img/wordle_game_8.png" alt="" class="other_game">
+                </div>
+                <div>
+                    <img src="img/wordle_game_9.png" alt="" class="other_game">
+                </div>
             </div>
-            <div>
-                <img src="img/wordle_game_5.png" alt="" class="other_game">
-                <img src="img/wordle_game_6.png" alt="" class="other_game">
-            </div>
-            <div>
-                <img src="img/wordle_game_7.png" alt="" class="other_game">
-                <img src="img/wordle_game_8.png" alt="" class="other_game">
-            </div>
-            <div>
-                <img src="img/wordle_game_9.png" alt="" class="other_game">
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <div>
         <div class="bg-square-group group1"></div>
         <div class="bg-square-group group2"></div>

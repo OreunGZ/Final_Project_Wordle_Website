@@ -175,9 +175,13 @@ body{
 
 .Game > .Element > .Square {
     background-color: var(--color-white);
+    transform:scale(1);
+    transition: all .1s ease-out 0s;
 }
 .Keyboard > .Element > .Square {
     background-color: var(--color-lightblue);
+    transform:scale(1);
+    transition: all .1s ease-out 0s;
 }
 
 .mobile-keyboard {
@@ -190,19 +194,19 @@ body{
 .Game > .Element > .Square:hover {
     background-color: var(--color-green);
     transform:scale(1.1);  
-    transition: all .1s ease-in-out .1s;  
+    transition: all .1s ease-in 0s;  
 }
 
 .Game > .Element > .YellowSQ:hover {
     background-color: var(--color-yellow);
     transform:scale(1.1);
-    transition: all .1s ease-in-out .1s;
+    transition: all .1s ease-in 0s;
 }
 
 .Keyboard > .Element > .Square:hover {
     background-color: var(--color-slightlydarkerblue);
     transform:scale(1.1);
-    transition: all .1s ease-in-out .1s;
+    transition: all .1s ease-in 0s;
 }
 
 .Keyboard > .Element > .Square > i {
@@ -526,7 +530,185 @@ img {
     color: var(--color-green);
 }
 
+/* INSTRUCTIONS SMALL/INSTRUCTIONS */
+.instructions > div{
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    font-size: 50px; 
+    flex-direction: column;
+    gap: 10px;
+    padding: 100px;
+    text-align: center;
+    font-weight: bold
+}
+.subtitle > h1{
+    display: flex;
+    justify-content: center; 
+    font-size: 50px;
+}
+/*  INSTRUCTIONS SMALL/BUTTON */
+.btn_play>a {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    padding: 28px;
+    margin: 15px auto;
+    border: 5px solid darkgreen;
+    border-radius: 50px;
+    width: 50%;
+    max-width: 400px;
+    transform:scale(1);
+    transition: all .08s ease-out 0s;
+}
+.btn_play>a:hover {
+    transform:scale(1.1);
+    transition: all .02s ease-in 0s;
+}
 
+/*  INSTRUCTIONS SMALL/TEXT */
+.instrucciones{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    color:#000000;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.85rem;
+    padding: 1.1rem 1.1rem 5vh 1.1rem;
+}
+.theme > h1 {
+    font-size: var(--subtitlesize);
+}
+
+/* INSTRUCTIONS/INSTRUCTIONS */
+
+.tutorial {
+    display: flex;
+    align-items: right;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 2rem 10rem 2vh 10rem;
+}
+.tutorial > h3 {
+    font-size: var(--subsubtitlesize);
+}
+.tutorial > p {
+    font-size: var(--paragraphsize);
+}
+.color_explanation {
+    list-style: none;
+}
+.color_group {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-direction: row;
+}
+.color_group > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.color_group > div > h3 {
+    font-size: var(--subsubtitlesize);
+}
+.color_group > div > p {
+    font-size: var(--paragraphsize);
+}
+.green_color {
+    width: 3.8rem;
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-green);
+    text-transform: uppercase;
+    border-radius: 20%;
+    padding: 3rem;
+    margin: 1rem;
+}
+.yellow_color {
+    width: 3.8rem;
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-yellow);
+    text-transform: uppercase;
+    border-radius: 20%;
+    padding: 3rem;
+    margin: 1rem;
+}
+.gray_color {
+    width: 3.8rem;
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray);
+    text-transform: uppercase;
+    border-radius: 20%;
+    padding: 3rem;
+    margin: 1rem;
+}
+
+/* GALLERY */
+.gallery_monitor,.gallery_phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 0 6rem 2vh 6rem;
+}
+.gallery_monitor > p,.gallery_phone > p {
+    font-size: var(--subsubtitlesize);
+    padding: 0 5% 0 5%;
+}
+.gallery_phone {
+    display: none;
+}
+.gallery_group {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.gallery_group > div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.other_game {
+    height: 12rem;
+    width: auto;
+    padding: 0;
+    margin: 0.5rem;
+    border-radius: 15%;
+    transform:scale(1);
+    border: 0px solid var(--color-gray);
+    transition: all .1s ease-in 0s;
+}
+.other_game:hover {
+    transform:scale(1.1);
+    border-radius: 10%;
+    margin: 1rem;
+    border: 5px solid var(--color-green);
+    transition: all .1s ease-out 0s;  
+}
 
 @media (max-width: 720px) {
     * {
@@ -548,9 +730,22 @@ img {
         height: 32px;
         font-size: 16px;
     }
-    @media (max-width: 720px) {
     * {
         font-size: .9rem;
+    }
+    .instructions > div{
+        font-size: 35px;
+    }
+    .btn_play
+    {
+        font-size: 20px;
+        width: 100%;
+        max-width: 500px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .tutorial {
+        padding: 2rem 6rem 2vh 6rem;
     }
 }
 
@@ -614,12 +809,29 @@ img {
     .nav-mobile .menu-mobile a {
         font-size: 4rem;
     }
-
     .header > a {
         display: none;
     }
-
     #ContactMobile {
         display:block;
+    }
+    .instructions > div{
+        font-size: 35px;
+    }
+    .btn_play{
+        font-size: 20px;
+        width: 90%;
+        max-width: 400px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .gallery_monitor{
+        display: none;
+    }
+    .gallery_phone{
+        display: flex;
+    }
+    .gallery_monitor > p,.gallery_phone > p {
+        padding: 0;
     }
 }

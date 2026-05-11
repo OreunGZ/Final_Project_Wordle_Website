@@ -3,83 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/instructions_style.css">
+    <title>Instrucciones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Wordle_Logo_ICONO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <nav>
-        <i></i>
-        <i></i>
-    </nav>
-    <header class="title">
-        <img src="img/Wordle_Logo_ICONO.png" alt="">
-        <img src="img/Wordle_Logo_TEXTO.png" alt="">
-    </header>
-    <section class="theme">
-        <h1>Instrucciones</h1>
-    </section>
-    <section class="play">
-        <h2>
-            Aquí lo de Jorge :D lo demás sigo yo
-        </h2>
-    </section>
-    <section class="tutorial">
-        <h3>Palabra del Día</h3>
-        <p>
-            El modo de juego estándar.<br>
-            La palabra del día está oculta. Solo sabes que tiene 5 letras, pero según escribas otras palabras de cinco letras, podrás obtener pistas.<br>
-            Si la palabra es válida, sus letras cambiarán de color.
-        </p>
-        <li class="color_explanation">
-            <ul>
-                <div class="color_group">
-                    <div class="green_color">
-                    </div>
-                    <div>
-                        <h3>
-                            Verde
-                        </h3>
-                        <p>
-                            Si una letra de la palabra cambia a verde, es que la palabra del día tiene esta misma letra, en esta misma posición. ¡Enhorabuena, vas por buen camino!
-                        </p>
-                    </div>
-                </div>
+    <div class="wrapper">
+        <input type="checkbox" id="sideMenu" class="side-menu">
+
+        <nav class="header">
+            <label for="sideMenu" class="icons-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="contact.html">
+                <i class="fa-regular fa-address-book"></i>
+            </a>
+        </nav>
+        <div class="nav-mobile">
+            <label for="sideMenu" class="close-menu">
+                <i class="fa-solid fa-times"></i>
+            </label>
+            <ul class="menu-mobile">
+                <li><a href="gamepage.html">Wordle</a></li>
+                <li><a href="other_games.html">Otros Juegos</a></li>
+                <li><a href="instructions.html">Instrucciones</a></li>
+                <li id="ContactMobile"><a href="contact.html">Contactos</a></li>
             </ul>
-			<ul>
-                <div class="color_group">
-                    <div class="yellow_color">
+        </div>
+        <header class="title">
+            <img src="img/Wordle_Logo_ICONO.png" alt="">
+            <img src="img/Wordle_Logo_TEXTO.png" alt="">
+        </header>
+        <section class="subtitle">
+            <h1>Instrucciones</h1>
+        </section>
+        <section class="instructions">
+            <div>
+                <p>Una palabra de 5 letras y 6 intentos.</p>
+                <p>Descubre la palabra oculta.</p>
+            </div>
+        </section>
+        <div class="btn_play">
+            <a href="gamepage.html"></a>
+        </div>
+        <section class="tutorial">
+            <h3>Palabra del Día</h3>
+            <p>
+                El modo de juego estándar.<br>
+                La palabra del día está oculta. Solo sabes que tiene 5 letras, pero según escribas otras palabras de cinco letras, podrás obtener pistas.<br>
+                Si la palabra es válida, sus letras cambiarán de color.
+            </p>
+            <li class="color_explanation">
+                <ul>
+                    <div class="color_group">
+                        <div class="green_color">
+                        </div>
+                        <div>
+                            <h3>
+                                Verde
+                            </h3>
+                            <p>
+                                Si una letra de la palabra cambia a verde, es que la palabra del día tiene esta misma letra, en esta misma posición. ¡Enhorabuena, vas por buen camino!
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>
-                            Amarillo
-                        </h3>
-                        <p>
-                            Si una letra de la palabra cambia a amarillo, es que la palabra del día tiene esta misma letra, pero está en la posición errónea.
-                        </p>
+                </ul>
+                <ul>
+                    <div class="color_group">
+                        <div class="yellow_color">
+                        </div>
+                        <div>
+                            <h3>
+                                Amarillo
+                            </h3>
+                            <p>
+                                Si una letra de la palabra cambia a amarillo, es que la palabra del día tiene esta misma letra, pero está en la posición errónea.
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </ul>
-			<ul>
-                <div class="color_group">
-                    <div class="gray_color">
+                </ul>
+                <ul>
+                    <div class="color_group">
+                        <div class="gray_color">
+                        </div>
+                        <div>
+                            <h3>
+                                Gris
+                            </h3>
+                            <p>
+                                Si una letra de la palabra cambia a gris, es que la palabra del día no tiene esta letra.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>
-                            Gris
-                        </h3>
-                        <p>
-                            Si una letra de la palabra cambia a gris, es que la palabra del día no tiene esta letra.
-                        </p>
-                    </div>
-                </div>
-            </ul>
-        </li>
-		<p>
-			Cuanto menos intentos necesites para conseguir la palabra... ¡Más podrás presumir a tus amigos!<br>
-			Cada día, hay una nueva palabra oculta, así que no te aburrirás en el bus.
-		</p>
-		
-    </section>
+                </ul>
+            </li>
+            <p>
+                Cuanto menos intentos necesites para conseguir la palabra... ¡Más podrás presumir a tus amigos!<br>
+                Cada día, hay una nueva palabra oculta, así que no te aburrirás en el bus.
+            </p>            
+        </section>
+    </div>
 
     <div>
         <div class="bg-square-group group1"></div>
