@@ -167,12 +167,22 @@ body{
     justify-content: center;
     flex-direction: row;
 }
-.game {
+.other_game {
     height: 12rem;
     width: auto;
     padding: 0;
     margin: 0.5rem;
     border-radius: 15%;
+    transform:scale(1);
+    border: 0px solid var(--color-gray);
+    transition: all .1s ease-in 0s;
+}
+.other_game:hover {
+    transform:scale(1.1);
+    border-radius: 10%;
+    margin: 1rem;
+    border: 5px solid var(--color-green);
+    transition: all .1s ease-out 0s;  
 }
 
 /* BACKGROUND */
@@ -243,9 +253,6 @@ body{
     }
     .title img:last-child {
         height: 3.5rem;
-    }
-    body{
-        background-color: antiquewhite;
     }
     .gallery_monitor{
         display: none;
