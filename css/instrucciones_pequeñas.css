@@ -42,14 +42,13 @@
 }
 
 /* boton juego */
-.btn_play > p{
-    font-size: 20px; 
+.btn_play>a {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: green;
-    padding: 28px ;
-    /* margin: 15px 40vw 15px 40vw; */
+    padding: 28px;
     margin: 15px auto;
     border: 5px solid darkgreen;
     border-radius: 50px;
