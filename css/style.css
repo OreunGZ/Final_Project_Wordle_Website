@@ -71,11 +71,10 @@ body{
     top: 0;
     left: -100%;
     background-color: aliceblue;
-    transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-out;
     z-index: 999;
     box-shadow: 4px 0 10px rgba(0,0,0,0.1);
 }
-
 
 .nav-mobile .menu-mobile {
     list-style: none;
@@ -456,9 +455,10 @@ img {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.4rem;
 }
- 
+
 .form-item p {
     font-size: var(--paragraphsize);
     font-weight: bold;
@@ -502,6 +502,32 @@ img {
  
 .form-item input[type="submit"]:hover {
     background-color: var(--color-yellow);
+}
+
+.form-item input[type="radio"] {
+    float: right;
+    accent-color: var(--color-gray);
+    transform: scale(1.2);
+    transition: all .1s ease-in;
+}
+
+.form-item input[type="radio"]:checked {
+    accent-color: var(--color-green);
+    transform: scale(2);
+    transition: all .1s ease-out;
+}
+
+.form-item input[type="checkbox"] {
+    float: right;
+    accent-color: var(--color-gray);
+    transform: scale(1.2);
+    transition: all .05s ease-in;
+}
+
+.form-item input[type="checkbox"]:checked {
+    accent-color: var(--color-green);
+    transform: scale(1.5);
+    transition: all .05s ease-out;
 }
 
 /* FIXED BUTTON */
